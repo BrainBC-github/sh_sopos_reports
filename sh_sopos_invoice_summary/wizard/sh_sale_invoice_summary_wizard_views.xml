@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sh_sale_invoice_summary_report_wizard" model="ir.ui.view">
+        <field name="name">sh.sale.invoice.summary.wizard</field>
+        <field name="model">sh.sale.invoice.summary.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Sale and POS Invoice Summary">
+                <group>
+                    <group>
+                        <field name="sh_start_date" />
+                        <field name="sh_partner_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                        <field name="sh_session_id" options="{'no_create': True}" />
+                    </group>
+                    <group>
+                        <field name="sh_end_date" />
+                        <field name="sh_status" widget="radio" />
+                        <field name="company_ids" widget="many2many_tags" options="{'no_create': True}" groups="base.group_multi_company" />
+                    </group>
+                </group>
+                <footer>
+                    <button name="display_report" string="View" class="oe_highlight" type="object" />
+                    <button name="print_report" string="Print" class="oe_highlight" type="object" icon="fa-print" />
+                    <button name="print_xls_report" string="Print In XLS" class="oe_highlight" type="object" icon="fa-file-excel-o" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sale_invoice_summary" model="ir.actions.act_window">
+        <field name="name">Sale and POS Invoice Summary</field>
+        <field name="res_model">sh.sale.invoice.summary.wizard</field>
+        <field name="view_id" ref="sh_sale_invoice_summary_report_wizard" />
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_sale_invoice_summary" name="Sale and POS Invoice Summary" groups="sh_group_sopos_invoice_summary" parent="sale.menu_sale_report" action="action_sale_invoice_summary" sequence="55" />
+    <menuitem id="menu_sale_pos_inv_summary" name="Sale and POS Invoice Summary" groups="sh_group_sopos_invoice_summary" parent="point_of_sale.menu_point_rep" action="action_sale_invoice_summary" />
+</odoo>

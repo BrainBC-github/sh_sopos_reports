@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sh_sopos_detail_report">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="text-center">
+                        <h2>Sale and POS Details</h2>
+
+                        <strong><t t-esc="date_start" t-options="{'widget': 'datetime'}" /> - <t t-esc="date_stop" t-options="{'widget': 'datetime'}" /></strong>
+                    </div>
+
+                    <!-- Orderlines -->
+                    <h3>Products</h3>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price Unit</th>
+                            </tr>
+                        </thead>
+                        <t t-set="count" t-value="0"/>
+                        <tbody>
+                            <tr t-foreach="products" t-as="line">
+                                <t t-set="count" t-value="1"/>
+                                <t t-set="internal_reference" t-value="line['code'] and '[%s] ' % line['code'] or ''" />
+                                <td><t t-esc="internal_reference" /><t t-esc="line['product_name']" /></td>
+                                <td>
+                                    <t t-esc="line['quantity']" />
+                                    <t t-if='line["uom"] != "Unit(s)"'>
+                                        <t t-esc='line["uom"]' />
+                                    </t>
+                                </td>
+                                <td>
+                                    <t t-esc='line["price_unit"]' />
+                                    <t t-if='line["discount"] != 0'> Disc: <t t-esc='line["discount"]' />% </t>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <t t-if="count == 0">
+                            <div class="text-center m-4">
+                                No Data Found
+                            </div>
+                        </t>
+                    </table>
+
+                    <br />
+
+                    <h3>Payments</h3>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="payments" t-as="payment">
+                                <td><t t-esc="payment" /></td>
+                                <td><t t-esc="payments[payment]" t-options="{'widget': 'float', 'precision': currency_precision}" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br />
+
+                    <h3>Taxes</h3>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="taxes" t-as="tax">
+                                <td><t t-esc="tax['name']" /></td>
+                                <td><t t-esc="tax['total']" t-options="{'widget': 'float', 'precision': currency_precision}" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br />
+                    <br />
+
+                    <strong>Total: <t t-esc="total_paid" t-options="{'widget': 'float', 'precision': currency_precision}" /></strong>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <record id="sh_sopos_detail_report_action" model="ir.actions.report">
+        <field name="name">Sales and POS Details Report</field>
+        <field name="model">report.sh_sopos_reports.sh_sopos_detail_report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">sh_sopos_reports.sh_sopos_detail_report</field>
+        <field name="print_report_name">'Sales and POS Details Report'</field>
+    </record>
+</odoo>

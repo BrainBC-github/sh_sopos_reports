@@ -1,0 +1,790 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_sopos_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-04 12:47+0000\n"
+"PO-Revision-Date: 2020-11-04 12:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_payment_report_action
+msgid "'Invoice Payment Report'"
+msgstr "'发票付款报告'"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_detail_report_action
+msgid "'Sales and POS Details Report'"
+msgstr "'销售和 POS 详细信息报告'"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_report_sp_report
+msgid "'Sales and POS Report By Saleperson'"
+msgstr "'销售人员的销售和 POS 报告'"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_customers_report_action
+msgid "'Top SO and POS Customers'"
+msgstr "'顶级 SO 和 POS 客户'"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_selling_product_report_action
+msgid "'Top Selling Products'"
+msgstr "'畅销产品'"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "<b>Total</b>"
+msgstr "<b>全部的</b>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid ""
+"<br/>\n"
+"                                <strong>Compare To Date :</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>比较日期：</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid ""
+"<br/>\n"
+"                                <strong>To Date :</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>迄今为止 ：</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid ""
+"<br/>\n"
+"                        <strong>To Date :</strong>"
+msgstr ""
+"<br/>\n"
+"                        <strong>迄今为止 ：</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "<span>Sale Person :</span>"
+msgstr "<span>销售人员：</span>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "<strong>Compare Customer</strong>"
+msgstr "<strong>比较客户</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>Compare From Date :</strong>"
+msgstr "<strong>与日期比较：</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>Compare Product</strong>"
+msgstr "<strong>比较产品</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "<strong>Customer</strong>"
+msgstr "<strong>顾客</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>From Date :</strong>"
+msgstr "<strong>从日期 ：</strong><strong></strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>Product</strong>"
+msgstr "<strong>产品</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>Qty Sold</strong>"
+msgstr "<strong>QTY售出</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "<strong>Sales Amount</strong>"
+msgstr "<strong>销售额</strong>"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sale_pos_details_report_wizard__state__all
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_soops_payment_report_wizard__state__all
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_report_sp_wizard__state__all
+msgid "All"
+msgstr "全部"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Amount Due"
+msgstr "金额到期"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Amount Invoiced"
+msgstr "发票金额"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_customer_wizard__type__basic
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_selling_product_wizard__type__basic
+msgid "Basic"
+msgstr "基本的"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customer_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_details_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_payment_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_sp_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+msgid "Cancel"
+msgstr "取消"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_detail_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_invoice_payment_report_xls_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_top_customer_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.top_sopos_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.xls_sopos_report_by_sp_view
+msgid "Close"
+msgstr "关闭"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__company_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__company_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__company_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__company_ids
+msgid "Companies"
+msgstr "公司"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__company_ids
+msgid "Company"
+msgstr "公司"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_customer_wizard__type__compare
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_selling_product_wizard__type__compare
+msgid "Compare"
+msgstr "相比"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__date_compare_from
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__date_compare_from
+msgid "Compare From Date"
+msgstr "与日期相比"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__date_compare_to
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__date_compare_to
+msgid "Compare To Date"
+msgstr "与约会进行比较"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__create_uid
+msgid "Created by"
+msgstr "由...制作"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__currency_id
+msgid "Currency"
+msgstr "货币"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Customer"
+msgstr "顾客"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Disc:"
+msgstr "光盘："
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_customers_doc__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_detail_report__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_report_doc__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_selling_pr_doc__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_sp_report_doc__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sale_pos_details_report_wizard__state__done
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_report_sp_wizard__state__done
+msgid "Done"
+msgstr "完毕"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__excel_file
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__excel_file
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__excel_file
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__excel_file
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__excel_file
+msgid "Download report Excel"
+msgstr "下载excel."
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__end_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__date_end
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__date_end
+msgid "End Date"
+msgstr "结束日期"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_so_pos_detail_excel_extended
+#: model:ir.model,name:sh_sopos_reports.model_top_selling_sopos_excel_extended
+#: model:ir.model,name:sh_sopos_reports.model_top_sopos_customer_excel_extended
+msgid "Excel Extended"
+msgstr "Excel延伸"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__file_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__file_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__file_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__file_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__file_name
+msgid "Excel File"
+msgstr "Excel文件"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+msgid "Filter"
+msgstr "筛选"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__date_from
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__date_from
+msgid "From Date"
+msgstr "从日期"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_customers_doc__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_detail_report__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_report_doc__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_selling_pr_doc__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_sp_report_doc__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sopos_invoice_payment_report_xls
+msgid "Invioce Payment Xls Report"
+msgstr "Invicce付款XLS报告"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_payment_report_action
+msgid "Invoice Payment Report"
+msgstr "发票付款报告"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_customers_doc____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_detail_report____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_report_doc____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_selling_pr_doc____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_sp_report_doc____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended____last_update
+msgid "Last Modified on"
+msgstr "最后修改了"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__write_uid
+msgid "Last Updated by"
+msgstr "最后更新"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__write_date
+msgid "Last Updated on"
+msgstr "上次更新了"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "Lost Customers"
+msgstr "失去了客户"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "Lost Products"
+msgstr "丢失的产品"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+msgid "Name"
+msgstr "姓名"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "New Customers"
+msgstr "新客户"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "New Products"
+msgstr "新产品"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__no_of_top_item
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__no_of_top_item
+msgid "No of Items"
+msgstr "没有项目"
+
+#. module: sh_sopos_reports
+#: code:addons/sh_sopos_reports/sh_top_sopos_product/wizard/top_selling_wizard.py:0
+#, python-format
+msgid "No of items must be positive. or not zero"
+msgstr "没有物品必须是积极的。或不零"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_soops_payment_report_wizard__state__open
+msgid "Open"
+msgstr "打开"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Order Date"
+msgstr "订购日期"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Order Number"
+msgstr "订单号"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__config_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__config_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__config_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__config_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__config_ids
+msgid "POS Configuration"
+msgstr "POS配置"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_soops_payment_report_wizard__state__paid
+msgid "Paid"
+msgstr "有薪酬的"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+msgid "Payment Method"
+msgstr "付款方法"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Payments"
+msgstr "款项"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Price Unit"
+msgstr "价格单位"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customer_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_details_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_payment_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_sp_wizard_form_view
+msgid "Print"
+msgstr "打印"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_payment_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_sp_wizard_form_view
+msgid "Print In XLS"
+msgstr "在XL中打印"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+msgid "Print Report"
+msgstr "打印报告"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customer_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_details_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+msgid "Print Xls"
+msgstr "打印XL"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__product_id
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Product"
+msgstr "产品"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Products"
+msgstr "产品"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__qty
+msgid "Qty Sold"
+msgstr "QTY售出"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Quantity"
+msgstr "数量"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+msgid "Refund"
+msgstr "退款"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__type
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__type
+msgid "Report Type"
+msgstr "报告类型"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_sopos_detail_excel_form
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_sopos_top_customer_excel_form
+msgid "Reports Excel"
+msgstr "报告Excel."
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_sopos_invoice_payment_report
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_payment_report_wizard_action
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_payment_report_wizard_menuitem
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_payment_report_wizard_menuitem_pos
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_payment_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_invoice_payment_report_xls_view
+msgid "SO and POS Payment Report"
+msgstr "所以和POS付款报告"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_details_report_wizard_form
+msgid "Sale and POS Details"
+msgstr "销售和POS细节"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_detail_xls_report_view
+msgid "Sale and POS Details Xlsx"
+msgstr "销售和POS细节XLSX"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sopos_report_salesperson_xls
+msgid "Sale pos Report Salesperson"
+msgstr "销售POS报告销售人员"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__team_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__team_id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__team_id
+msgid "Sales Channel"
+msgstr "销售渠道"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_details_report_action
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_detail_report_action
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_details_report_menuitem
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_details_report_menuitem_pos
+msgid "Sales and POS Details Report"
+msgstr "销售和POS详细信息报告"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.xls_sopos_report_by_sp_view
+msgid "Sales and POS Report By Sale Person"
+msgstr "销售和POS销售人员报告"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_sopos_report_by_sp_excel_form
+msgid "Sales and POS Report By Sale Person Excel"
+msgstr "销售和POS销售人员Excel"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_report_sp_action
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_report_sp_report
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_report_sp_menuitem
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_report_sp_menuitem_pos
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_sp_wizard_form_view
+msgid "Sales and POS Report By Saleperson"
+msgstr "Saleperson的销售和POS报告"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__user_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__user_ids
+msgid "Salesperson"
+msgstr "销售人员"
+
+#. module: sh_sopos_reports
+#: model:res.groups,name:sh_sopos_reports.sh_sopos_payment_report_group
+msgid "Show Salesperson Field In SO and POS Payment Report"
+msgstr "显示SO和POS付款报告中的营业员字段"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__start_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__date_start
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__date_start
+msgid "Start Date"
+msgstr "开始日期"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__state
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__state
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__state
+msgid "Status"
+msgstr "地位"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Taxes"
+msgstr "税收"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "To"
+msgstr "到"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__date_to
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__date_to
+msgid "To Date"
+msgstr "迄今为止"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_top_customer_xls_report_view
+msgid "Top SO and POS Customer"
+msgstr "顶部和POS客户"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_customer_wizard_action
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_customers_report_action
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_customer_wizard_menuitem
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_customer_wizard_menuitem_pos
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customer_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "Top SO and POS Customers"
+msgstr "顶级和POS客户"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_selling_product_model_tree_action
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_selling_product_wizard_action
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_selling_product_report_action
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_selling_products_main
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_selling_products_main_pos
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_top_selling_products
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_top_selling_products_pos
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.top_sopos_xls_report_view
+msgid "Top SO and POS Selling Products"
+msgstr "顶部和POS销售产品"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_top_sopos_selling_excel_form
+msgid "Top SO and POS Selling Products Xlsx"
+msgstr "顶部和POS销售产品XLSX"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sopos_customer_wizard
+msgid "Top SOPOS Customers"
+msgstr "顶级SOPOS客户"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sopos_selling_product_wizard
+msgid "Top selling product Transient model to just filter products"
+msgstr "顶级销售产品暂时模型只是过滤产品"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sopos_selling_product
+msgid ""
+"Top selling product persistence model to  used in snippet or any other "
+"places"
+msgstr ""
+“最畅销的产品持久性模型，用于片段或任何其他”
+“地方”
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Total"
+msgstr "全部的"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__product_uom_qty
+msgid "Total Qty. Sold"
+msgstr "总计。卖"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__amount_total
+msgid "Total Sales Amount"
+msgstr "总销售额"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Total:"
+msgstr "全部的："
+
+#. module: sh_sopos_reports
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_update_top_selling_products
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_update_top_selling_products_pos
+msgid "Update SO and POS Top Selling Products"
+msgstr "更新SO和POS顶级销售产品"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_detail_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_top_customer_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.top_sopos_xls_report_view
+msgid "Xls Report"
+msgstr "XLS报告"
+
+#. module: sh_sopos_reports
+#: code:addons/sh_sopos_reports/sh_top_customers_sopos/wizard/top_sopos_customer_wizard.py:0
+#: code:addons/sh_sopos_reports/sh_top_sopos_product/wizard/top_selling_wizard.py:0
+#, python-format
+msgid "compare from date must be less than compare to date."
+msgstr "与日期相比必须少于与日期比较。"
+
+#. module: sh_sopos_reports
+#: code:addons/sh_sopos_reports/sh_top_customers_sopos/wizard/top_sopos_customer_wizard.py:0
+#: code:addons/sh_sopos_reports/sh_top_sopos_product/wizard/top_selling_wizard.py:0
+#, python-format
+msgid "from date must be less than to date."
+msgstr "从日期必须少于约会。"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_report_doc
+msgid "invoice payment report abstract model"
+msgstr "发票付款报告抽象模型"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_soops_payment_report_wizard
+msgid "invoice payment report wizard Model"
+msgstr "发票付款报告向导模型"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_sp_report_doc
+msgid "sale person report abstract model"
+msgstr "销售人员报告抽象模型"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_detail_report
+msgid "sales pos details report abstract model"
+msgstr "销售POS详细介绍抽象模型"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sale_pos_details_report_wizard
+msgid "sales pos details report wizard model"
+msgstr "销售POS详细信息报告向导模型"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sopos_report_sp_wizard
+msgid "sh sale pos report salesperson wizard model"
+msgstr "Sh Sale Pos举报销售人员向导模型"
+
+#. module: sh_sopos_reports
+#: code:addons/sh_sopos_reports/sh_payment_report_sopos/wizard/payment_report_wizard.py:0
+#: code:addons/sh_sopos_reports/sh_sopos_details_report/wizard/sale_pos_details_report_wizard.py:0
+#: code:addons/sh_sopos_reports/sh_sopos_report_salesperson/wizard/report_salesperson_wizard.py:0
+#, python-format
+msgid "start date must be less than end date."
+msgstr "开始日期必须少于结束日期。"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_selling_pr_doc
+msgid "top selling product report abstract model"
+msgstr "顶级销售产品报告抽象模型"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_customers_doc
+msgid "top so and pos customers report abstract model"
+msgstr "顶部和POS客户报告抽象模型"

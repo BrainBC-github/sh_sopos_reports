@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="sh_sale_by_category_wizard" model="ir.ui.view">
+		<field name="name">sh.sale.category.wizard</field>
+		<field name="model">sh.sale.category.wizard</field>
+		<field name="arch" type="xml">
+			<form string="Sales By Product Category">
+				<group>
+					<group>
+						<field name="sh_start_date" />
+						<field name="sh_category_ids" widget="many2many_tags"  options="{'no_create': True}" />
+						<field name="sh_session_id"  options="{'no_create': True}" />
+					</group>
+					<group>
+						<field name="sh_end_date" />
+						<field name="company_ids" widget="many2many_tags" options="{'no_create': True}" groups="base.group_multi_company" />
+					</group>
+				</group>
+				<footer>
+					<button name="display_report" string="View" class="oe_highlight" type="object" />
+					<button name="print_report" string="Print" class="oe_highlight" type="object" icon="fa-print" />
+					<button name="print_xls_report" string="Print In XLS" class="oe_highlight" type="object" icon="fa-file-excel-o" />
+					<button string="Cancel" class="btn-default" special="cancel" />
+				</footer>
+			</form>
+		</field>
+	</record>
+
+	<record id="action_sale_by_category" model="ir.actions.act_window">
+		<field name="name">Sales By Product Category</field>
+		<field name="res_model">sh.sale.category.wizard</field>
+		<field name="view_id" ref="sh_sale_by_category_wizard" />
+		<field name="view_mode">form</field>
+		<field name="target">new</field>
+	</record>
+	
+	<menuitem id="menu_sale_by_category" name="Sales By Product Category" parent="sale.menu_sale_report" groups="sh_group_sopos_by_category" action="action_sale_by_category" sequence="53" />
+	<menuitem id="menu_sale_pos_by_category" name="Sales By Product Category" parent="point_of_sale.menu_point_rep" groups="sh_group_sopos_by_category" action="action_sale_by_category" />
+</odoo>

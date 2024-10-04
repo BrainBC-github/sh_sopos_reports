@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sh_sale_by_category_view_tree" model="ir.ui.view">
+        <field name="name">sh.sale.by.category.view.tree</field>
+        <field name="model">sh.sale.by.category</field>
+        <field name="arch" type="xml">
+            <tree edit="0">
+                <field name="name" />
+                <field name="date_order" optional="show" />
+                <field name="currency_id" column_invisible='True' />
+                <field name="sh_product_id" optional="show" />
+                <field name="quantity" optional="show" sum="Total Quantity" />
+                <field name="price" optional="show" sum="Total Price" />
+                <field name="sh_product_uom_id" optional="show" />
+                <field name="tax" optional="show" sum="Total Tax" />
+                <field name="subtotal" optional="show" sum="Total Subtotal" />
+                <field name="total" optional="show" sum="Total" decoration-bf="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="sh_sale_by_category_view_search" model="ir.ui.view">
+        <field name="name">sh.sale.by.category.view.search</field>
+        <field name="model">sh.sale.by.category</field>
+        <field name="arch" type="xml">
+            <search string="Sale By Category">
+                <field name="name" />
+                <field name="date_order" />
+                <field name="sh_product_id" />
+                <field name="quantity" />
+                <field name="price" />
+                <field name="sh_product_uom_id" />
+                <field name="tax" />
+                <field name="subtotal" />
+                <field name="total" />
+                <filter string="Date" name="group_date" domain="[]"
+                    context="{'group_by': 'date_order'}" />
+                <filter string="Product" name="group_product" domain="[]"
+                    context="{'group_by': 'sh_product_id'}" />
+            </search>
+        </field>
+    </record>
+
+    <record id="sh_sale_by_category_view_action" model="ir.actions.act_window">
+        <field name="name">Sales By Product category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.sale.by.category</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+</odoo>

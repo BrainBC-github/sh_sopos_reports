@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+# Part of Softhealer Technologies.
+{
+    "name": "All In One Sales & POS Reports",
+    "author": "Softhealer Technologies",
+    "website": "https://www.softhealer.com",
+    "support": "support@softhealer.com",
+    "version": "0.0.1",
+    "category": "Extra Tools",
+    "summary": "Sales Report Based On Analysis,Compare Customer By Sales,Compare Products Based On Sell,Salesperson Wise Payment Report, Sales Report By Sales Person, Point Of Sale Report,sale reports,POS order report,point of sale order report POS Analysis Odoo",
+    "description": """All in one Sales & POS (Point Of Sale) report useful to provide different POS and sales reports to do analysis. A sales &POS analysis report shows the trends that occur in a company's sales volume over time. In its most basic form, a sales & POS analysis report shows whether sales are increasing or declining.""",
+    "depends": [
+        'sale_management',
+        'point_of_sale',
+    ],
+    "data": [
+        "sh_payment_report_sopos/security/sh_payment_report_sopos_groups.xml",
+        "sh_payment_report_sopos/security/ir.model.access.csv",
+        "sh_payment_report_sopos/wizard/sh_soops_payment_report_wizard_views.xml",
+        "sh_payment_report_sopos/report/sh_sopos_payment_report_templates.xml",
+        "sh_payment_report_sopos/views/sh_sopos_payment_report_views.xml",
+
+        "sh_sopos_details_report/security/sh_sopos_details_report_groups.xml",
+        "sh_sopos_details_report/security/ir.model.access.csv",
+        "sh_sopos_details_report/wizard/sh_sale_pos_details_report_wizard_views.xml",
+        "sh_sopos_details_report/report/sh_sopos_detail_report_templates.xml",
+        "sh_sopos_details_report/views/sh_sale_details_views.xml",
+
+        "sh_sopos_report_salesperson/security/sh_sopos_report_salesperson_groups.xml",
+        "sh_sopos_report_salesperson/security/ir.model.access.csv",
+        "sh_sopos_report_salesperson/wizard/sh_sopos_report_sp_wizard_views.xml",
+        "sh_sopos_report_salesperson/report/sh_sopos_sp_report_templates.xml",
+        "sh_sopos_report_salesperson/views/sh_sale_report_salesperson_views.xml",
+
+        "sh_top_customers_sopos/security/sh_top_customers_sopos_groups.xml",
+        "sh_top_customers_sopos/security/ir.model.access.csv",
+        "sh_top_customers_sopos/wizard/sh_sopos_customer_wizard_views.xml",
+        "sh_top_customers_sopos/report/sh_sopos_customers_report_templates.xml",
+        "sh_top_customers_sopos/views/sh_top_customer_views.xml",
+
+        "sh_top_sopos_product/security/sh_top_sopos_product_groups.xml",
+        "sh_top_sopos_product/security/ir.model.access.csv",
+        "sh_top_sopos_product/wizard/sh_sopos_selling_product_wizard_views.xml",
+        "sh_top_sopos_product/views/sh_sopos_selling_product_views.xml",
+        "sh_top_sopos_product/report/sh_sopos_selling_product_report_templates.xml",
+
+        'sh_customer_sopos_analysis/security/sh_customer_sopos_analysis_groups.xml',
+        'sh_customer_sopos_analysis/security/ir.model.access.csv',
+        'sh_customer_sopos_analysis/report/sh_customer_sale_analysis_report_templates.xml',
+        'sh_customer_sopos_analysis/wizard/sh_sale_analysis_wizard_views.xml',
+        'sh_customer_sopos_analysis/views/sh_customer_sopos_analysis_views.xml',
+
+        'sh_product_sopos_indent/security/sh_product_sopos_indent_groups.xml',
+        'sh_product_sopos_indent/security/ir.model.access.csv',
+        'sh_product_sopos_indent/wizard/sh_sale_product_indent_wizard_views.xml',
+        'sh_product_sopos_indent/report/sh_sopos_product_indent_report_templates.xml',
+        'sh_product_sopos_indent/views/sh_product_sales_indent_views.xml',
+        
+        'sh_sopos_by_category/security/sh_sopos_by_category_groups.xml',
+        'sh_sopos_by_category/security/ir.model.access.csv',
+        'sh_sopos_by_category/report/sh_sale_by_category_report_templates.xml',
+        'sh_sopos_by_category/wizard/sh_sale_category_wizard_views.xml',
+        'sh_sopos_by_category/views/sh_sale_by_product_category_views.xml',
+
+        'sh_sopos_invoice_summary/security/sh_sopos_invoice_summary_groups.xml',
+        'sh_sopos_invoice_summary/security/ir.model.access.csv',
+        'sh_sopos_invoice_summary/report/sh_sale_invoice_summary_report_templates.xml',
+        'sh_sopos_invoice_summary/wizard/sh_sale_invoice_summary_wizard_views.xml',
+        'sh_sopos_invoice_summary/views/sh_sale_invoice_summary_views.xml',
+
+        'sh_sopos_product_profit/security/sh_sopos_product_profit_groups.xml',
+        'sh_sopos_product_profit/security/ir.model.access.csv',
+        'sh_sopos_product_profit/data/sale_order_data.xml',
+        'sh_sopos_product_profit/report/sh_sales_product_profit_report_templates.xml',
+        'sh_sopos_product_profit/wizard/sh_sale_product_profit_wizard_views.xml',
+        'sh_sopos_product_profit/views/sale_order_line_views.xml',
+        'sh_sopos_product_profit/views/sh_sale_product_profit_views.xml',
+
+        "sh_sopos_profitability_report/security/sh_product_profitability_security.xml",
+        "sh_sopos_profitability_report/report/pos_order_line_reports.xml",
+        "sh_sopos_profitability_report/report/sale_order_line_reports.xml",
+
+        'sh_so_pos_sector_report/security/sh_so_pos_sector_report_groups.xml',
+        'sh_so_pos_sector_report/security/ir.model.access.csv',
+        'sh_so_pos_sector_report/views/sh_sale_pos_sector_views.xml',
+        'sh_so_pos_sector_report/wizard/sh_so_pos_section_report_wizard_views.xml',
+    ],
+    "images": ["static/description/background.gif", ],
+    "installable": True,
+    "license": "OPL-1",
+    "auto_install": False,
+    "application": True,
+    "price": 110,
+    "currency": "EUR"
+}

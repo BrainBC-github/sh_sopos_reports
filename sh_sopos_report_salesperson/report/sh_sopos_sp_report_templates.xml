@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sh_sopos_sp_report_doc">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="oe_structure" />
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center">
+                                <b>
+                                    <h4>Sales and POS Report By Sale Person</h4>
+                                </b>
+
+                                <b>
+                                    <span t-esc="date_start" t-options="{'widget': 'datetime'}" />
+                                    To
+                                    <span t-esc="date_end" t-options="{'widget': 'datetime'}" />
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+
+                    <t t-if="user_order_dic">
+                        <t t-foreach="user_order_dic.keys()" t-as="user">
+                            <center>
+                                <b>
+                                    <span>Sale Person :</span>
+                                    <span t-esc="user" />
+                                </b>
+                            </center>
+
+                            <t t-set="total" t-value="0" />
+                            <t t-set="total_amount_invoiced" t-value="0" />
+                            <t t-set="total_amount_due" t-value="0" />
+                            <table class="table table-sm o_main_table table-bordered" style="table-layout: fixed; border: 1px solid black;" id="">
+                                <thead style="display: table-row-group;">
+                                    <tr style="border: 1px solid black;">
+                                        <th style="border: 1px solid black;">Order Number</th>
+                                        <th style="border: 1px solid black;">Order Date</th>
+                                        <th style="border: 1px solid black;">Customer</th>
+                                        <th style="border: 1px solid black;">Total</th>
+                                        <th style="border: 1px solid black;">Amount Invoiced</th>
+                                        <th style="border: 1px solid black;">Amount Due</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="sale_tbody">
+                                    <tr t-foreach="user_order_dic[user]" t-as="order">
+                                        <td style="border: 1px solid black;">
+                                            <span t-esc="order.get('order_number','')" />
+                                        </td>
+                                        <td style="border: 1px solid black;">
+                                            <span t-esc="order.get('order_date','')" t-options="{'widget': 'datetime'}" />
+                                        </td>
+                                        <td style="border: 1px solid black;">
+                                            <span t-esc="order.get('customer','')" />
+                                        </td>
+                                        <td style="border: 1px solid black;">
+                                            <span t-esc="'%.1f'%order.get('total',0)" />
+                                        </td>
+                                        <td style="border: 1px solid black;">
+                                            <span t-esc="'%.1f'%order.get('paid_amount',0)" />
+                                        </td>
+                                        <td style="border: 1px solid black;">
+                                            <span t-esc="'%.1f'%order.get('due_amount',0)" />
+                                        </td>
+
+                                        <t t-set="total" t-value="total + order.get('total',0)" />
+                                        <t t-set="total_amount_invoiced" t-value="total_amount_invoiced + order.get('paid_amount',0)" />
+                                        <t t-set="total_amount_due" t-value="total_amount_due + order.get('due_amount',0)" />
+                                    </tr>
+
+                                    <t t-if='total>0'>
+                                        <tr>
+                                            <td style="border: 1px solid black;"></td>
+                                            <td style="border: 1px solid black;"></td>
+                                            <td style="border: 1px solid black;">
+                                                <b>Total</b>
+                                            </td>
+                                            <td style="border: 1px solid black;">
+                                                <span t-esc="total" />
+                                            </td>
+                                            <td style="border: 1px solid black;">
+                                                <span t-esc="total_amount_invoiced" />
+                                            </td>
+                                            <td style="border: 1px solid black;">
+                                                <span t-esc="total_amount_due" />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </t>
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <record id="sh_sopos_report_sp_report" model="ir.actions.report">
+        <field name="name">Sales and POS Report By Saleperson</field>
+        <field name="model">report.sh_sopos_reports.sh_sopos_sp_report_doc</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">sh_sopos_reports.sh_sopos_sp_report_doc</field>
+        <field name="print_report_name">'Sales and POS Report By Saleperson'</field>
+    </record>
+</odoo>

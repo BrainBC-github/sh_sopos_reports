@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sh_sale_invoice_summary_view_tree" model="ir.ui.view">
+        <field name="name">sh.sale.invoice.summary.view.tree</field>
+        <field name="model">sh.sale.invoice.summary</field>
+        <field name="arch" type="xml">
+            <tree edit="0">
+                <field name="name" />
+                <field name="date_order" optional="show" />
+                <field name="invoice_number" optional="show" />
+                <field name="invoice_date" optional="show" />
+                <field name="currency_id" column_invisible='True' />
+                <field name="amount_invoiced" sum="Total Invoice Amount" optional="show" />
+                <field name="amount_paid" sum="Total Invoice Paid Amount" optional="show" />
+                <field name="amount_due" sum="Total Invoice Due Amount" optional="show" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="sh_sale_invoice_summary_view_search" model="ir.ui.view">
+        <field name="name">sh.sale.invoice.summary.view.search</field>
+        <field name="model">sh.sale.invoice.summary</field>
+        <field name="arch" type="xml">
+            <search string="Sales Invoice Summary">
+                <field name="name" />
+                <field name="date_order" />
+                <field name="invoice_number" />
+                <field name="invoice_date" />
+                <field name="amount_invoiced" />
+                <field name="amount_paid" />
+                <field name="amount_due" />
+                <filter string="Order Date" name="group_order_date" domain="[]" context="{'group_by': 'date_order'}" />
+                <filter string="Invoice Date" name="group_invoice_date" domain="[]" context="{'group_by': 'invoice_date'}" />
+            </search>
+        </field>
+    </record>
+
+    <record id="sh_sale_invoice_summary_order_action" model="ir.actions.act_window">
+        <field name="name">Sales Invoice Summary</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.sale.invoice.summary</field>
+        <field name="context">{'search_default_group_customer': 1}</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+</odoo>

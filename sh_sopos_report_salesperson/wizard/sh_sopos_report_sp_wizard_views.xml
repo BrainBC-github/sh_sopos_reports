@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sh_sopos_report_sp_wizard_form_view" model="ir.ui.view">
+        <field name="name">sh.sopos.report.sp.wizard.form.view</field>
+        <field name="model">sh.sopos.report.sp.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Sales and POS Report By Saleperson">
+                <group>
+                    <group>
+                        <field name="date_start" />
+                        <field name="date_end" />
+                    </group>
+                    <group>
+                        <field name="state" />
+                        <field name="company_ids" widget="many2many_tags" options="{'no_create': True}" groups="base.group_multi_company" />
+                        <field name="config_ids" widget="many2many_tags" options="{'no_create': True}" />
+                    </group>
+                </group>
+                <field name="user_ids" colspan="4" groups="sales_team.group_sale_salesman_all_leads,point_of_sale.group_pos_manager">
+                    <tree create="0">
+                        <field name="name" />
+                    </tree>
+                </field>
+
+                <footer>
+                    <button name="display_report" string="View" class="oe_highlight" type="object" />
+                    <button name="print_report" string="Print" class="oe_highlight" type="object" />
+                    <button name="print_xls_report" string="Print In XLS" class="oe_highlight" type="object" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="sh_sopos_report_sp_action" model="ir.actions.act_window">
+        <field name="name">Sales and POS Report By Saleperson</field>
+        <field name="res_model">sh.sopos.report.sp.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="sh_sopos_report_sp_menuitem" name="Sales and POS Report By Saleperson" action="sh_sopos_report_sp_action" parent="sale.menu_sale_report" groups="sh_group_sopos_report_salesperson" sequence="57" />
+    <menuitem id="sh_sopos_report_sp_menuitem_pos" name="Sales and POS Report By Saleperson" action="sh_sopos_report_sp_action" parent="point_of_sale.menu_point_rep" groups="sh_group_sopos_report_salesperson" sequence="5" />
+</odoo>

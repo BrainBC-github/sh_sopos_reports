@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sh_sale_details_view_tree" model="ir.ui.view">
+        <field name="name">sh.sale.details.view.tree</field>
+        <field name="model">sh.sale.details</field>
+        <field name="arch" type="xml">
+            <tree edit="0">
+                <field name="name" />
+                <field name="quantity" optional="show" />
+                <field name="price_unit" optional="show" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="sh_sale_details_view_search" model="ir.ui.view">
+        <field name="name">sh.sale.details.view.search</field>
+        <field name="model">sh.sale.details</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="quantity" />
+                <field name="price_unit" />
+                <filter string="Product" name="group_product" domain="[]"
+                    context="{'group_by': 'name'}" />
+            </search>
+        </field>
+    </record>
+
+    <record id="sh_sale_details_action" model="ir.actions.act_window">
+        <field name="name">Sales Details Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.sale.details</field>
+        <field name="context">{'search_default_group_product': 1}</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+</odoo>

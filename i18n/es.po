@@ -1,0 +1,790 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_sopos_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-04 12:47+0000\n"
+"PO-Revision-Date: 2020-11-04 12:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_payment_report_action
+msgid "'Invoice Payment Report'"
+msgstr "'Informe de pago de facturas'"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_detail_report_action
+msgid "'Sales and POS Details Report'"
+msgstr "'Informe de detalles de ventas y puntos de venta'"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_report_sp_report
+msgid "'Sales and POS Report By Saleperson'"
+msgstr "'Informe de ventas y punto de venta por vendedor'"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_customers_report_action
+msgid "'Top SO and POS Customers'"
+msgstr "'Principales clientes de SO y POS'"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,print_report_name:sh_sopos_reports.sh_sopos_selling_product_report_action
+msgid "'Top Selling Products'"
+msgstr "'Los productos más vendidos'"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "<b>Total</b>"
+msgstr "<b>Total</b>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid ""
+"<br/>\n"
+"                                <strong>Compare To Date :</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>Comparar hasta la fecha:</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid ""
+"<br/>\n"
+"                                <strong>To Date :</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>Hasta la fecha :</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid ""
+"<br/>\n"
+"                        <strong>To Date :</strong>"
+msgstr ""
+"<br/>\n"
+"                        <strong>Hasta la fecha :</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "<span>Sale Person :</span>"
+msgstr "<span>Persona de venta:</span>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "<strong>Compare Customer</strong>"
+msgstr "<strong>Comparar cliente</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>Compare From Date :</strong>"
+msgstr "<strong>Comparar desde fecha:</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>Compare Product</strong>"
+msgstr "<strong>Comparar producto</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "<strong>Customer</strong>"
+msgstr "<strong>Cliente</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>From Date :</strong>"
+msgstr "<strong>Partir de la fecha :</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>Product</strong>"
+msgstr "<strong>Producto</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "<strong>Qty Sold</strong>"
+msgstr "<strong>Cantidad vendida</strong>"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "<strong>Sales Amount</strong>"
+msgstr "<strong>Cantidad de ventas</strong>"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sale_pos_details_report_wizard__state__all
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_soops_payment_report_wizard__state__all
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_report_sp_wizard__state__all
+msgid "All"
+msgstr "Todas"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Amount Due"
+msgstr "Monto adeudado"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Amount Invoiced"
+msgstr "Monto facturado"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_customer_wizard__type__basic
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_selling_product_wizard__type__basic
+msgid "Basic"
+msgstr "Básica"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customer_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_details_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_payment_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_sp_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_detail_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_invoice_payment_report_xls_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_top_customer_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.top_sopos_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.xls_sopos_report_by_sp_view
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__company_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__company_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__company_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__company_ids
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__company_ids
+msgid "Company"
+msgstr "Empresa"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_customer_wizard__type__compare
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_selling_product_wizard__type__compare
+msgid "Compare"
+msgstr "Comparar"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__date_compare_from
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__date_compare_from
+msgid "Compare From Date"
+msgstr "Comparar desde fecha"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__date_compare_to
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__date_compare_to
+msgid "Compare To Date"
+msgstr "Comparar hasta la fecha"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__create_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__create_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Disc:"
+msgstr "Dto:"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_customers_doc__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_detail_report__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_report_doc__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_selling_pr_doc__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_sp_report_doc__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__display_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sale_pos_details_report_wizard__state__done
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_sopos_report_sp_wizard__state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__excel_file
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__excel_file
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__excel_file
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__excel_file
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__excel_file
+msgid "Download report Excel"
+msgstr "Descargar informe Excel"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__end_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__date_end
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__date_end
+msgid "End Date"
+msgstr "Fecha final"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_so_pos_detail_excel_extended
+#: model:ir.model,name:sh_sopos_reports.model_top_selling_sopos_excel_extended
+#: model:ir.model,name:sh_sopos_reports.model_top_sopos_customer_excel_extended
+msgid "Excel Extended"
+msgstr "Excel extendido"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__file_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__file_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__file_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__file_name
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__file_name
+msgid "Excel File"
+msgstr "Archivo Excel"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+msgid "Filter"
+msgstr "Filtrar"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__date_from
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__date_from
+msgid "From Date"
+msgstr "Partir de la fecha"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_customers_doc__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_detail_report__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_report_doc__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_selling_pr_doc__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_sp_report_doc__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__id
+msgid "ID"
+msgstr "CARNÉ DE IDENTIDAD"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sopos_invoice_payment_report_xls
+msgid "Invioce Payment Xls Report"
+msgstr "Informe Invioce Payment Xls"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_payment_report_action
+msgid "Invoice Payment Report"
+msgstr "Informe de pago de facturas"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_customers_doc____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_detail_report____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_report_doc____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_selling_pr_doc____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_report_sh_sopos_reports_sh_sopos_sp_report_doc____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended____last_update
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__write_uid
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_so_pos_detail_excel_extended__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_invoice_payment_report_xls__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sopos_report_salesperson_xls__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_selling_sopos_excel_extended__write_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_top_sopos_customer_excel_extended__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "Lost Customers"
+msgstr "Clientes perdidas"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "Lost Products"
+msgstr "Productos perdidos"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+msgid "Name"
+msgstr "Nombre"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "New Customers"
+msgstr "Nuevas clientas"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+msgid "New Products"
+msgstr "nuevos productos"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__no_of_top_item
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__no_of_top_item
+msgid "No of Items"
+msgstr "No de artículos"
+
+#. module: sh_sopos_reports
+#: code:addons/sh_sopos_reports/sh_top_sopos_product/wizard/top_selling_wizard.py:0
+#, python-format
+msgid "No of items must be positive. or not zero"
+msgstr "El número de elementos debe ser positivo. o no cero"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_soops_payment_report_wizard__state__open
+msgid "Open"
+msgstr "Abierta"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Order Date"
+msgstr "Fecha de orden"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Order Number"
+msgstr "Número de orden"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__config_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__config_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__config_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__config_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__config_ids
+msgid "POS Configuration"
+msgstr "Configuración POS"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields.selection,name:sh_sopos_reports.selection__sh_soops_payment_report_wizard__state__paid
+msgid "Paid"
+msgstr "Pagada"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Price Unit"
+msgstr "Precio unitario"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customer_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_details_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_payment_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_sp_wizard_form_view
+msgid "Print"
+msgstr "Impresión"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_payment_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_sp_wizard_form_view
+msgid "Print In XLS"
+msgstr "Imprimir en XLS"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+msgid "Print Report"
+msgstr "Imprimir reporte"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customer_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_details_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+msgid "Print Xls"
+msgstr "Imprimir Xls"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__product_id
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Product"
+msgstr "Producto"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Products"
+msgstr "Productos"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product__qty
+msgid "Qty Sold"
+msgstr "Cantidad vendida"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+msgid "Refund"
+msgstr "Reembolso"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__type
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__type
+msgid "Report Type"
+msgstr "Tipo de informe"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_sopos_detail_excel_form
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_sopos_top_customer_excel_form
+msgid "Reports Excel"
+msgstr "Informes Excel"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_sopos_invoice_payment_report
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_payment_report_wizard_action
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_payment_report_wizard_menuitem
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_payment_report_wizard_menuitem_pos
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_payment_report_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_invoice_payment_report_xls_view
+msgid "SO and POS Payment Report"
+msgstr "Informe de pago SO y POS"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_details_report_wizard_form
+msgid "Sale and POS Details"
+msgstr "Detalles de venta y punto de venta"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_detail_xls_report_view
+msgid "Sale and POS Details Xlsx"
+msgstr "Venta y detalles POS Xlsx"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sopos_report_salesperson_xls
+msgid "Sale pos Report Salesperson"
+msgstr "Vendedor de informe pos venta"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__team_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__team_id
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__team_id
+msgid "Sales Channel"
+msgstr "Canal de ventas"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_details_report_action
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_detail_report_action
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_details_report_menuitem
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_details_report_menuitem_pos
+msgid "Sales and POS Details Report"
+msgstr "Informe de detalles de ventas y puntos de venta"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.xls_sopos_report_by_sp_view
+msgid "Sales and POS Report By Sale Person"
+msgstr "Informe de ventas y punto de venta por vendedor"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_sopos_report_by_sp_excel_form
+msgid "Sales and POS Report By Sale Person Excel"
+msgstr "Informe de ventas y punto de venta por vendedor Excel"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_report_sp_action
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_report_sp_report
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_report_sp_menuitem
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_report_sp_menuitem_pos
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_sp_wizard_form_view
+msgid "Sales and POS Report By Saleperson"
+msgstr "Informe de ventas y punto de venta por vendedor"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__user_ids
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__user_ids
+msgid "Salesperson"
+msgstr "Vendedora"
+
+#. module: sh_sopos_reports
+#: model:res.groups,name:sh_sopos_reports.sh_sopos_payment_report_group
+msgid "Show Salesperson Field In SO and POS Payment Report"
+msgstr "Mostrar campo de vendedor en el informe de pago de SO y POS"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__start_date
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__date_start
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__date_start
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sale_pos_details_report_wizard__state
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_soops_payment_report_wizard__state
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_report_sp_wizard__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "To"
+msgstr "A"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__date_to
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__date_to
+msgid "To Date"
+msgstr "Hasta la fecha"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_top_customer_xls_report_view
+msgid "Top SO and POS Customer"
+msgstr "Cliente superior de SO y POS"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_customer_wizard_action
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_customers_report_action
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_customer_wizard_menuitem
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_customer_wizard_menuitem_pos
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customer_wizard_form
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_customers_doc
+msgid "Top SO and POS Customers"
+msgstr "Principales clientes de SO y POS"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_selling_product_model_tree_action
+#: model:ir.actions.act_window,name:sh_sopos_reports.sh_sopos_selling_product_wizard_action
+#: model:ir.actions.report,name:sh_sopos_reports.sh_sopos_selling_product_report_action
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_selling_products_main
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_selling_products_main_pos
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_top_selling_products
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_top_selling_products_pos
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_pr_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_selling_product_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.top_sopos_xls_report_view
+msgid "Top SO and POS Selling Products"
+msgstr "Principales productos de venta de SO y POS"
+
+#. module: sh_sopos_reports
+#: model:ir.actions.act_window,name:sh_sopos_reports.action_top_sopos_selling_excel_form
+msgid "Top SO and POS Selling Products Xlsx"
+msgstr "Principales productos de venta de SO y POS Xlsx"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sopos_customer_wizard
+msgid "Top SOPOS Customers"
+msgstr "Principales clientes de SOPOS"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sopos_selling_product_wizard
+msgid "Top selling product Transient model to just filter products"
+msgstr "Producto más vendido Modelo transitorio para filtrar productos"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sopos_selling_product
+msgid ""
+"Top selling product persistence model to  used in snippet or any other "
+"places"
+msgstr ""
+"Modelo de persistencia del producto más vendido para usar en un fragmento o cualquier otro"
+"lugares"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_report_doc
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_sp_report_doc
+msgid "Total"
+msgstr "Total"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_selling_product_wizard__product_uom_qty
+msgid "Total Qty. Sold"
+msgstr "Calidad Total. Vendido"
+
+#. module: sh_sopos_reports
+#: model:ir.model.fields,field_description:sh_sopos_reports.field_sh_sopos_customer_wizard__amount_total
+msgid "Total Sales Amount"
+msgstr "Monto total de ventas"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sh_sopos_detail_report
+msgid "Total:"
+msgstr "Total:"
+
+#. module: sh_sopos_reports
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_update_top_selling_products
+#: model:ir.ui.menu,name:sh_sopos_reports.sh_sopos_update_top_selling_products_pos
+msgid "Update SO and POS Top Selling Products"
+msgstr "Actualizar los productos más vendidos de SO y POS"
+
+#. module: sh_sopos_reports
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_detail_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.sopos_top_customer_xls_report_view
+#: model_terms:ir.ui.view,arch_db:sh_sopos_reports.top_sopos_xls_report_view
+msgid "Xls Report"
+msgstr "Informe Xls"
+
+#. module: sh_sopos_reports
+#: code:addons/sh_sopos_reports/sh_top_customers_sopos/wizard/top_sopos_customer_wizard.py:0
+#: code:addons/sh_sopos_reports/sh_top_sopos_product/wizard/top_selling_wizard.py:0
+#, python-format
+msgid "compare from date must be less than compare to date."
+msgstr "comparar desde la fecha debe ser menor que comparar hasta la fecha."
+
+#. module: sh_sopos_reports
+#: code:addons/sh_sopos_reports/sh_top_customers_sopos/wizard/top_sopos_customer_wizard.py:0
+#: code:addons/sh_sopos_reports/sh_top_sopos_product/wizard/top_selling_wizard.py:0
+#, python-format
+msgid "from date must be less than to date."
+msgstr "desde la fecha debe ser menor que hasta la fecha."
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_report_doc
+msgid "invoice payment report abstract model"
+msgstr "Informe de pago de factura modelo abstracto"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_soops_payment_report_wizard
+msgid "invoice payment report wizard Model"
+msgstr "Asistente de informe de pago de facturas Modelo"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_sp_report_doc
+msgid "sale person report abstract model"
+msgstr "persona de venta informe modelo abstracto"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_detail_report
+msgid "sales pos details report abstract model"
+msgstr "informe de detalles de la posición de ventas modelo abstracto"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sale_pos_details_report_wizard
+msgid "sales pos details report wizard model"
+msgstr "modelo de asistente de informe de detalles de posición de ventas"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_sh_sopos_report_sp_wizard
+msgid "sh sale pos report salesperson wizard model"
+msgstr "sh venta pos informe vendedor asistente modelo"
+
+#. module: sh_sopos_reports
+#: code:addons/sh_sopos_reports/sh_payment_report_sopos/wizard/payment_report_wizard.py:0
+#: code:addons/sh_sopos_reports/sh_sopos_details_report/wizard/sale_pos_details_report_wizard.py:0
+#: code:addons/sh_sopos_reports/sh_sopos_report_salesperson/wizard/report_salesperson_wizard.py:0
+#, python-format
+msgid "start date must be less than end date."
+msgstr "la fecha de inicio debe ser menor que la fecha de finalización."
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_selling_pr_doc
+msgid "top selling product report abstract model"
+msgstr "modelo abstracto de informe de producto más vendido"
+
+#. module: sh_sopos_reports
+#: model:ir.model,name:sh_sopos_reports.model_report_sh_sopos_reports_sh_sopos_customers_doc
+msgid "top so and pos customers report abstract model"
+msgstr "Los mejores clientes pos y pos reportan modelo abstracto"

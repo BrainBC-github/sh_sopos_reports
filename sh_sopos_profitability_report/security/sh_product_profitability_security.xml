@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sh_pos_profitablity_report_group" model="res.groups">
+        <field name="name">POS Profitability Report</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+    </record>
+    
+    <record id="sh_so_product_profitablity_report_group" model="res.groups">
+        <field name="name">SO Profitability Report</field>
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+    </record>
+    
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sh_sale_product_indent_wizard,access_sh_sale_product_indent_wizard,model_sh_sale_product_indent_wizard,base.group_user,1,1,1,1
+sh_sopos_reports.access_sh_product_sales_indent,access_sh_product_sales_indent,sh_sopos_reports.model_sh_product_sales_indent,base.group_user,1,1,1,1
